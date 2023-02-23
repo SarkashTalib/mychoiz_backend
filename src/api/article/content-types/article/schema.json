@@ -44,10 +44,6 @@
       "target": "api::comment.comment",
       "inversedBy": "article"
     },
-    "type": {
-      "type": "boolean",
-      "default": true
-    },
     "description": {
       "type": "text"
     },
@@ -56,6 +52,15 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "articles"
+    },
+    "IsFeatured": {
+      "type": "enumeration",
+      "enum": [
+        "featured",
+        "normall"
+      ],
+      "required": true,
+      "default": "normall"
     }
   }
 }
