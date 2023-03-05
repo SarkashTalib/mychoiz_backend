@@ -10,12 +10,14 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^2.0.3",
     "@strapi/plugin-graphql": "^4.5.6",
     "@strapi/plugin-i18n": "4.5.3",
     "@strapi/plugin-users-permissions": "4.5.3",
     "@strapi/strapi": "4.5.3",
-    "@vscode/sqlite3": "^5.1.2-vscode",
-    "better-sqlite3": "7.4.6"
+    "pg": "^8.9.0",
+    "strapi-chatgpt": "^1.0.2",
+    "strapi-plugin-wysiwyg-react-md-editor": "^4.3.0"
   },
   "author": {
     "name": "A Strapi developer"
