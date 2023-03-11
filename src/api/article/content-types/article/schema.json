@@ -26,15 +26,6 @@
         }
       }
     },
-    "content": {
-      "type": "richtext",
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
     "coverImg": {
       "type": "media",
       "multiple": true,
@@ -92,6 +83,19 @@
           "localized": true
         }
       }
+    },
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }
